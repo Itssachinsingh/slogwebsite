@@ -1,0 +1,36 @@
+.side-nav-dialogue {
+  position: fixed;
+  top: 30%;
+  left: 0px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 999;
+}
+
+.dialogue-link {
+  text-decoration: none;
+}
+
+.dialogue-box {
+  padding: 2px 25px;
+  background-color: #a65a00;
+  color: white;
+  border-radius: 15px;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  font-size: 1.1rem;
+}
+
+/* Optional: Add animation */
+.dialogue-box {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(-10px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
