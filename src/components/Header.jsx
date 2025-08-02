@@ -159,7 +159,7 @@ export const Header = ({ color }) => {
                     </li>
                     <div className="menu-container">
                         <ul className="main-menu">
-                            <Link to='/courses'> <li className="menu-item">
+                            {/* <Link to='/courses'> <li className="menu-item">
                                 Courses
                                 <div className="mega-menu">
                                     <div className="submenu">
@@ -184,7 +184,10 @@ export const Header = ({ color }) => {
                                         ))}
                                     </div>
                                 </div>
-                            </li></Link>
+                            </li></Link> */}
+                            <li className="nav-item">
+                                <Link to='/mentors'>Mentors</Link>
+                            </li>
                         </ul>
                     </div>
                     <Link to='/contact'><li className="nav-item">Contact</li></Link>

@@ -6,7 +6,9 @@ import banner2 from '../images/2.jpg'
 import banner3 from '../images/3.jpg'
 import banner4 from '../images/4.jpg'
 import about from '../images/about.png';
-
+import access from '../images/access2.png'
+import quality from '../images/quality2.png';
+import industry from '../images/Idustry2.jpg'
 export const About = () => {
     return (
         <div>
@@ -71,11 +73,35 @@ export const About = () => {
                     </div>
                 </div>
 
-                <div>
+                <div className='choose_container'>
                     <h2>Why Choose Us?</h2>
-                    
+                    <div className='choose-us-container'>
+                        <div className='choose-us-cards'>
+                            <div className='choose-image'><img src={access} alt="" /></div>
+                            <div className='choose-us-des'>
+                                <h4>Life Time Access</h4>
+                                <p>Learning doesn't end when the course does. Our dedicated support team is here to assist you every step of the way, from enrollment to graduation and beyond. Whether you have questions about course content or need help navigating career opportunities, we're always here to help.</p>
+                            </div>
+                        </div>
+                        <div className='choose-us-cards'>
+                            <div className='choose-image'><img src={quality} alt="" /></div>
+                            <div className='choose-us-des'>
+                                <h4>High Quality Courses</h4>
+                                <p>Are you ready to take your expertise to the next level? At Slog Solutions, we specialize in providing top-tier training solutions designed to empower individuals and organizations with the knowledge they need to succeed.</p>
+                            </div>
+                        </div>
+                        <div className='choose-us-cards'>
+                            <div className='choose-image'><img src={industry} alt="" /></div>
+                            <div className='choose-us-des'>
+                                <h4>Industry Level Exposure</h4>
+                                <p>Our courses are led by industry experts with years of experience in their respective fields. They bring real-world insights and practical knowledge to the classroom, ensuring that you receive the most relevant and up-to-date training available.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
+                <div className='email-input-container'>
+                    <input type="text" className='email-input' placeholder='Choose from 50+ Professional Courses'/><button>Enroll Now</button>
+                </div>
 
             </div>
             <Footer />

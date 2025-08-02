@@ -24,7 +24,7 @@ const megaData = [
     images: [drone1, drone2, drone3],
   },
   {
-    name: "Corporate Training",
+    name: "Corporate Training/Govt. Training",
     title: "Corporate Training",
     price: "from 24,000.00 EUR",
     specs: {
